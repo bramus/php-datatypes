@@ -1,0 +1,35 @@
+{
+    "name": "bramus/datatypes",
+    "description": "A (Legacy) Types Implementation for PHP",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bramus",
+            "email": "bramus@bram.us"
+        }
+    ],
+    "require": {
+        "php": ">=7.2",
+        "symfony/validator": "~2.3",
+        "symfony/translation": "~2.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bramus\\Datatypes\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\Bramus\\Datatypes\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "./vendor/bin/phpunit --colors=always",
+        "lint": "php-cs-fixer fix --diff --dry-run --ansi",
+        "fix": "php-cs-fixer fix"
+    }
+}
