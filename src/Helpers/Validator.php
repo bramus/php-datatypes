@@ -38,7 +38,7 @@ class Validator {
 				$constraints->allowMissingFields = true;
 			}
 
-			$validationResultList = $validator->validateValue($data, $constraints);
+			$validationResultList = $validator->validate($data, $constraints);
 			if ($validationResultList->count() > 0) {
 				$errors = [];
 
